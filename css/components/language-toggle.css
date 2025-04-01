@@ -1,0 +1,28 @@
+/* Ajuste para lenguaje */
+.language-toggle {
+	position: fixed;
+	bottom: 30px;
+	right: 90px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+	color: #333;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	transition: background-color 0.3s, transform 0.3s;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(74, 107, 221, 0.4);
+}
+
+.language-toggle:hover {
+	color: #e0e0e0;
+	background-color: var(--secondary-color);
+	transform: scale(1.1);
+}

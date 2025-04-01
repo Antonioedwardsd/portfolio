@@ -1,0 +1,15 @@
+.timeline-item {
+	opacity: 0;
+	transform: translateX(-30px);
+}
+
+.timeline-item.animate-timeline {
+	animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

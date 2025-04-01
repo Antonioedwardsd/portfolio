@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Antonio Edwards - Full-Stack Developer</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<h1>Antonio Edwards</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home" data-i18n="nav.home">Home</a></li>
+					<li><a href="#about" data-i18n="nav.about">About</a></li>
+					<li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+					<li><a href="#education" data-i18n="nav.education">Education</a></li>
+					<li>
+						<a href="#experience" data-i18n="nav.experience">Experience</a>
+					</li>
+					<li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+					<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+				</ul>
+			</nav>
+			<button class="mobile-nav-toggle">
+				<i class="fas fa-bars"></i>
+			</button>
+		</header>
+
+		<main>
+			<!-- Hero section -->
+			<section id="home" class="hero-section">
+				<div class="hero-content">
+					<h2 class="intro-name">
+						<span data-i18n="hero.greeting">Hello, I'm</span>
+						<span class="highlight">Antonio Edwards</span>
+					</h2>
+					<p class="profession" data-i18n="hero.profession">
+						Full-Stack Developer
+					</p>
+					<p class="intro-text" data-i18n="hero.intro">
+						Developer with experience in logistics and operations, graduated
+						from Le Wagon's intensive bootcamp, passionate about creating
+						innovative and efficient web solutions.
+					</p>
+					<div class="cta-buttons">
+						<a
+							href="#portfolio"
+							class="btn primary-btn"
+							data-i18n="hero.viewWork"
+							>View My Work</a
+						>
+						<a
+							href="#contact"
+							class="btn secondary-btn"
+							data-i18n="hero.contactMe"
+							>Contact Me</a
+						>
+					</div>
+				</div>
+				<div class="hero-graphic">
+					<div class="hero-code-graphic">
+						<i class="fas fa-code"></i>
+						<i class="fas fa-database"></i>
+						<i class="fab fa-react"></i>
+					</div>
+				</div>
+			</section>
+
+			<!-- About section  -->
+			<section id="about" class="about-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="about.title">About Me</h2>
+					<div class="about-content about-content-full">
+						<div class="about-text">
+							<p data-i18n="about.description">
+								Junior Full-Stack Developer with experience in logistics and
+								operations, graduated from the intensive web development
+								bootcamp at Le Wagon. I designed and developed a responsive web
+								application that centralizes bill and subscription payments,
+								enables expense categorization, and sends automatic email
+								reminders. I am driven by the challenge of identifying problems
+								and resolving them with innovative and efficient solutions.
+							</p>
+
+							<div class="about-details">
+								<div class="about-detail-item">
+									<i class="fas fa-map-marker-alt"></i>
+									<span>Santiago, Chile</span>
+								</div>
+								<div class="about-detail-item">
+									<i class="fas fa-language"></i>
+									<span data-i18n="about.languages"
+										>Spanish (Native), English (B2)</span
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills section -->
+			<section id="skills" class="skills-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="skills.title">My Skills</h2>
+					<div class="skills-container">
+						<div class="skill-group">
+							<h3 class="skill-group-title" data-i18n="skills.frontend">
+								Frontend
+							</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">HTML</span>
+								<span class="skill-tag">CSS</span>
+								<span class="skill-tag">Bootstrap</span>
+								<span class="skill-tag">JavaScript (ES6)</span>
+								<span class="skill-tag">TypeScript</span>
+								<span class="skill-tag">TSX</span>
+								<span class="skill-tag">React.js</span>
+								<span class="skill-tag">Vue.js</span>
+								<span class="skill-tag">Webpack</span>
+								<span class="skill-tag">Responsive Design</span>
+								<span class="skill-tag">Web Accessibility</span>
+								<span class="skill-tag">Figma</span>
+								<span class="skill-tag">Vite</span>
+								<span class="skill-tag">React Router</span>
+								<span class="skill-tag">Recharts</span>
+								<span class="skill-tag">Axios</span>
+							</div>
+						</div>
+
+						<div class="skill-group">
+							<h3 class="skill-group-title" data-i18n="skills.backend">
+								Backend
+							</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Node.js</span>
+								<span class="skill-tag">Express.js</span>
+								<span class="skill-tag">Ruby</span>
+								<span class="skill-tag">Ruby on Rails</span>
+								<span class="skill-tag">REST API</span>
+								<span class="skill-tag">JWT Authentication</span>
+								<span class="skill-tag">API Development</span>
+							</div>
+						</div>
+
+						<div class="skill-group">
+							<h3 class="skill-group-title" data-i18n="skills.databases">
+								Databases & Deployment
+							</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">SQL</span>
+								<span class="skill-tag">PostgreSQL</span>
+								<span class="skill-tag">MongoDB</span>
+								<span class="skill-tag">Mongoose</span>
+								<span class="skill-tag">Docker</span>
+								<span class="skill-tag">Heroku</span>
+								<span class="skill-tag">Nodemon</span>
+							</div>
+						</div>
+
+						<div class="skill-group">
+							<h3 class="skill-group-title" data-i18n="skills.tools">Tools</h3>
+							<div class="skill-tags">
+								<span class="skill-tag">Git</span>
+								<span class="skill-tag">GitHub</span>
+								<span class="skill-tag">NPM Workspaces</span>
+								<span class="skill-tag">Concurrently</span>
+								<span class="skill-tag">API Integration</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Education section -->
+			<section id="education" class="education-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="education.title">Education</h2>
+					<div class="timeline">
+						<!-- Primera entrada -->
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h3 data-i18n="education.backend.title">
+									Back-End Application Development
+								</h3>
+								<p
+									class="timeline-institution"
+									data-i18n="education.backend.institution"
+								>
+									Desafío Latam (Scholarship)
+								</p>
+								<p class="timeline-date" data-i18n="education.backend.date">
+									October 2024 - March 2025 (In progress)
+								</p>
+								<ul>
+									<li data-i18n="education.backend.detail1">
+										Intensive program specialized in TypeScript, Node.js,
+										Express, and API development.
+									</li>
+									<li data-i18n="education.backend.detail2">
+										Selected as a beneficiary of a competitive scholarship.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Segunda entrada -->
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h3 data-i18n="education.webdev.title">Web Development</h3>
+								<p class="timeline-institution">Le Wagon</p>
+								<p class="timeline-date" data-i18n="education.webdev.date">
+									January 2024 - March 2024
+								</p>
+								<ul>
+									<li data-i18n="education.webdev.detail1">
+										Intensive 9-week web development bootcamp.
+									</li>
+									<li data-i18n="education.webdev.detail2">
+										Technologies: HTML, CSS, Bootstrap, JavaScript (ES6), SQL,
+										Git, GitHub, Heroku, Ruby on Rails.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Tercera entrada -->
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-content">
+								<h3 data-i18n="education.tourism.title">Tourism Technician</h3>
+								<p class="timeline-institution">INACAP</p>
+								<p class="timeline-date" data-i18n="education.tourism.date">
+									March 2018 - December 2019
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Experience section -->
+			<section id="experience" class="experience-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="experience.title">
+						Professional Experience
+					</h2>
+
+					<div class="experience-item">
+						<div class="experience-header">
+							<h3 data-i18n="experience.logistics.title">
+								Partner / Head of Logistics and Operations
+							</h3>
+							<p
+								class="experience-company"
+								data-i18n="experience.logistics.company"
+							>
+								1 Galón SPA – Santiago, Chile
+							</p>
+							<p class="experience-date" data-i18n="experience.logistics.date">
+								October 2019 – December 2023
+							</p>
+						</div>
+						<div class="experience-content">
+							<ul>
+								<li data-i18n="experience.logistics.detail1">
+									Co-founded the first company in Chile to offer home brewing
+									kits, achieving a 300% growth in sales over 4 years.
+								</li>
+								<li data-i18n="experience.logistics.detail2">
+									Managed the logistics and inventory of 50+ supplies from 4
+									countries, reaching a 99% on-time delivery rate.
+								</li>
+								<li data-i18n="experience.logistics.detail3">
+									Developed financial plans and budgets to optimize resources,
+									maximizing profitability and margins.
+								</li>
+								<li data-i18n="experience.logistics.detail4">
+									Implemented a supplier price monitoring system, reducing
+									operational costs by 12% within 6 months.
+								</li>
+								<li data-i18n="experience.logistics.detail5">
+									Led and supervised a team of 4, fostering talent development
+									and collaboration.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services section -->
+			<section id="services" class="services-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="services.title">My Services</h2>
+					<div class="services-container">
+						<div class="service-card">
+							<div class="service-icon"><i class="fas fa-code"></i></div>
+							<h3 data-i18n="services.fullstack.title">
+								Full-Stack Web Development
+							</h3>
+							<p data-i18n="services.fullstack.description">
+								Creating complete web applications with attractive frontend and
+								robust backend using Node.js, Express and React/Vue.
+							</p>
+						</div>
+						<div class="service-card">
+							<div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+							<h3 data-i18n="services.responsive.title">
+								Responsive Development
+							</h3>
+							<p data-i18n="services.responsive.description">
+								Designing interfaces that work perfectly on all devices,
+								enhancing user experience.
+							</p>
+						</div>
+						<div class="service-card">
+							<div class="service-icon"><i class="fas fa-database"></i></div>
+							<h3 data-i18n="services.database.title">Database Management</h3>
+							<p data-i18n="services.database.description">
+								Implementation and optimization of SQL databases with PostgreSQL
+								for efficient performance.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Portfolio section -->
+			<section id="portfolio" class="portfolio-section">
+				<div class="container">
+					<h2 class="section-title" data-i18n="portfolio.title">
+						My Portfolio
+					</h2>
+					<div class="portfolio-filters">
+						<button
+							class="filter-btn active"
+							data-filter="all"
+							data-i18n="portfolio.filter.all"
+						>
+							All
+						</button>
+						<button
+							class="filter-btn"
+							data-filter="web"
+							data-i18n="portfolio.filter.web"
+						>
+							Web Development
+						</button>
+						<button
+							class="filter-btn"
+							data-filter="app"
+							data-i18n="portfolio.filter.app"
+						>
+							Applications
+						</button>
+					</div>
+					<div class="portfolio-grid">
+						<div class="portfolio-item" data-category="web">
+							<img
+								src="assets/images/calories-tracker.jpg"
+								alt="Calorie Tracker"
+							/>
+							<div class="portfolio-overlay">
+								<h3 data-i18n="portfolio.calorie-tracker.title">
+									Calorie Tracker
+								</h3>
+								<p data-i18n="portfolio.calorie-tracker.description">
+									This application helps users track their daily calorie intake
+									and expenditure. The app is built with vanilla JavaScript
+									using classes for organization and localStorage for data
+									persistence.
+								</p>
+								<a
+									href="https://github.com/Antonioedwardsd/calorie-tracker"
+									class="btn"
+									data-i18n="portfolio.viewDetails"
+									>View Details</a
+								>
+							</div>
+						</div>
+						<div class="portfolio-item" data-category="web">
+							<img src="assets/images/foot-finance.jpg" alt="FootFinance" />
+							<div class="portfolio-overlay">
+								<h3 data-i18n="portfolio.foot-finance.title">FootFinance</h3>
+								<p data-i18n="portfolio.foot-finance.description">
+									FootFinance is a full-stack web application that allows users
+									to visualize and analyze the stock market performance of
+									football clubs listed on financial markets.
+								</p>
+								<a href="#" class="btn" data-i18n="portfolio.viewDetails"
+									>View Details</a
+								>
+							</div>
+						</div>
+						<div class="portfolio-item" data-category="web">
+							<img src="assets/images/airbnb-clone.jpg" alt="Airbnb Clone" />
+							<div class="portfolio-overlay">
+								<h3 data-i18n="portfolio.airbnb.title">Airbnb Clone</h3>
+								<p data-i18n="portfolio.airbnb.description">
+									Project designed and implemented during Le Wagon bootcamp
+								</p>
+								<a href="#" class="btn" data-i18n="portfolio.viewDetails"
+									>View Details</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact section -->
+			<section id="contact" class="contact-section">
+				<div class="contact-pattern contact-pattern-top"></div>
+				<div class="contact-pattern contact-pattern-bottom"></div>
+
+				<div class="container">
+					<h2 class="section-title" data-i18n="contact.title">Contact</h2>
+					<div class="contact-container">
+						<!-- Columna 1: Información de contacto -->
+						<div class="contact-info">
+							<div class="contact-item">
+								<div class="icon"><i class="fas fa-envelope"></i></div>
+								<div class="contact-details">
+									<h3 data-i18n="contact.email">Email</h3>
+									<p>
+										<a href="mailto:Antonio.edwards1992@gmail.com"
+											>Antonio.edwardsdev@gmail.com</a
+										>
+									</p>
+								</div>
+							</div>
+
+							<div class="contact-item">
+								<div class="icon"><i class="fas fa-phone"></i></div>
+								<div class="contact-details">
+									<h3 data-i18n="contact.phone">Phone</h3>
+									<p>
+										<a href="tel:+56976236486">+56 9 76236486</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="contact-item">
+								<div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+								<div class="contact-details">
+									<h3 data-i18n="contact.location">Location</h3>
+									<p>Santiago, Chile</p>
+								</div>
+							</div>
+
+							<!-- Aquí puedes añadir los iconos de redes sociales si lo deseas -->
+							<div class="contact-social">
+								<h3 data-i18n="contact.findMe">Or Find Me On</h3>
+								<div class="social-links">
+									<a
+										href="https://github.com/antonioedwardsd"
+										class="social-link social-link-light"
+										target="_blank"
+										aria-label="GitHub"
+									>
+										<i class="fab fa-github fa-lg"></i>
+									</a>
+									<a
+										href="https://www.linkedin.com/in/antonioedwardsd"
+										class="social-link social-link-light"
+										target="_blank"
+										aria-label="LinkedIn"
+									>
+										<i class="fab fa-linkedin-in fa-lg"></i>
+									</a>
+									<a
+										href="https://twitter.com/tuusuario"
+										class="social-link social-link-light"
+										target="_blank"
+										aria-label="Twitter"
+									>
+										<i class="fab fa-twitter fa-lg"></i>
+									</a>
+									<a
+										href="https://instagram.com/tuusuario"
+										class="social-link social-link-light"
+										target="_blank"
+										aria-label="Instagram"
+									>
+										<i class="fab fa-instagram fa-lg"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Columna 2: Formulario de contacto -->
+						<form class="contact-form">
+							<div class="form-status"></div>
+							<div class="form-group">
+								<label
+									class="form-label required-label"
+									data-i18n="contact.form.name"
+									>Name</label
+								>
+								<input type="text" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label
+									class="form-label required-label"
+									data-i18n="contact.form.email"
+									>Email</label
+								>
+								<input type="email" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label class="form-label" data-i18n="contact.form.subject"
+									>Subject</label
+								>
+								<input type="text" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label
+									class="form-label required-label"
+									data-i18n="contact.form.message"
+									>Message</label
+								>
+								<textarea class="form-control" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="btn primary-btn btn-icon">
+								<span data-i18n="contact.form.send">Send Message</span>
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-content">
+				<!-- Column 1: About & Social -->
+				<div class="footer-column footer-about">
+					<div class="footer-logo">
+						<h3>Antonio Edwards</h3>
+						<p>Full-Stack Developer</p>
+					</div>
+					<p class="footer-description" data-i18n="footer.description">
+						Creating efficient and innovative web solutions to help businesses
+						stand out in the digital world.
+					</p>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="footer-column footer-links">
+					<h3 data-i18n="footer.quickLinks">Quick Links</h3>
+					<ul>
+						<li><a href="#home" data-i18n="nav.home">Home</a></li>
+						<li><a href="#about" data-i18n="nav.about">About</a></li>
+						<li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+						<li>
+							<a href="#education" data-i18n="nav.education">Education</a>
+						</li>
+						<li>
+							<a href="#experience" data-i18n="nav.experience">Experience</a>
+						</li>
+						<li>
+							<a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+						</li>
+						<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Column 3: Contact Info -->
+				<div class="footer-column footer-contact">
+					<h3 data-i18n="footer.contact">Contact</h3>
+					<div class="footer-contact-item">
+						<i class="fas fa-envelope"></i>
+						<span>Antonio.edwardsdev@gmail.com</span>
+					</div>
+					<div class="footer-contact-item">
+						<i class="fas fa-phone"></i>
+						<span>+56 9 76236486</span>
+					</div>
+					<div class="footer-contact-item">
+						<i class="fas fa-map-marker-alt"></i>
+						<span>Santiago, Chile</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="copyright">
+					<p data-i18n="footer.copyright">
+						&copy; 2025 Antonio Edwards. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<button
+			id="dark-mode-toggle"
+			class="dark-mode-toggle"
+			aria-label="Toggle dark mode"
+		>
+			<i class="fas fa-moon"></i>
+		</button>
+
+		<button id="language-toggle" class="language-toggle">ES</button>
+
+		<script src="script.js" type="module"></script>
+	</body>
+</html>

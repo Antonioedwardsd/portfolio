@@ -1,0 +1,77 @@
+/* Base imports */
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/animations.css";
+
+/* Component imports */
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/forms.css";
+@import "components/skills.css";
+@import "components/dark-mode.css";
+@import "components/language-toggle.css";
+@import "components/social-links.css";
+
+/* Layout imports */
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/grid.css";
+@import "layout/containers.css";
+@import "layout/timeline.css";
+
+/* Section imports */
+@import "sections/hero.css";
+@import "sections/about.css";
+@import "sections/portfolio.css";
+@import "sections/contact.css";
+
+/* Responsive */
+@import "responsive.css";
+
+/* Minimal Base Styles */
+body {
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: var(--transition-base);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+section {
+	padding: var(--section-spacing) 0;
+}
+
+.container {
+	width: 90%;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 0 var(--container-padding);
+}
+
+/* Global transition for theme switching */
+body,
+section,
+.service-card,
+.portfolio-item,
+.contact-item,
+.contact-form,
+input,
+textarea {
+	transition: background-color 0.3s ease, color 0.3s ease,
+		border-color 0.3s ease;
+}

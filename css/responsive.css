@@ -1,0 +1,474 @@
+/* ==========================================================================
+   Responsive Styles - Media queries for different screen sizes
+   ========================================================================== */
+
+/* 
+ * This file contains global responsive adjustments and overrides.
+ * Component-specific responsive styles are in their respective files.
+ * Breakpoints:
+ * - XS: < 576px (phones)
+ * - SM: >= 576px (portrait tablets and large phones)
+ * - MD: >= 768px (landscape tablets)
+ * - LG: >= 992px (desktops)
+ * - XL: >= 1200px (large desktops)
+ */
+
+/* ==========================================================================
+   Extra Large Devices (large desktops, 1200px and up)
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+	/* Wider containers on very large screens */
+	.container {
+		max-width: 1140px;
+	}
+
+	/* Larger hero elements */
+	.hero-content h1 {
+		font-size: 4.5rem;
+	}
+
+	/* More columns in grids for larger screens */
+	.grid-auto-lg {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	/* Adjust section spacing */
+	section {
+		padding: 6rem 0;
+	}
+}
+
+/* ==========================================================================
+   Large Devices (desktops, between 992px and 1199px)
+   ========================================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	/* Adjust container width */
+	.container {
+		max-width: 960px;
+	}
+
+	/* Slightly smaller hero text */
+	.hero-content h1 {
+		font-size: 3.5rem;
+	}
+
+	/* Services grid adjustment */
+	.services-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* Portfolio grid adjustment */
+	.portfolio-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* Blog layout */
+	.blog-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* ==========================================================================
+   Medium Devices (tablets, between 768px and 991px)
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Container width */
+	.container {
+		max-width: 720px;
+	}
+
+	/* Smaller hero text */
+	.hero-content h1 {
+		font-size: 3rem;
+	}
+
+	.hero-content .profession {
+		font-size: 1.3rem;
+	}
+
+	/* Services section */
+	.services-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Two-column layouts */
+	.about-content,
+	.contact-container {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.about-image,
+	.about-text,
+	.contact-info,
+	.contact-form {
+		width: 100%;
+	}
+
+	/* Navigation spacing */
+	nav ul {
+		gap: 1.5rem;
+	}
+
+	/* Portfolio grid adjustment */
+	.portfolio-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Adjust section titles */
+	.section-title {
+		font-size: 2.2rem;
+	}
+
+	/* Footer columns */
+	.footer-content {
+		gap: 2rem;
+	}
+
+	.footer-column {
+		flex: 0 0 calc(50% - 2rem);
+	}
+}
+
+/* ==========================================================================
+   Small Devices (landscape phones, between 576px and 767px)
+   ========================================================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+	/* Container width */
+	.container {
+		max-width: 540px;
+	}
+
+	/* Mobile header adjustments */
+	header {
+		padding: 0.8rem 1rem;
+	}
+
+	/* Hero section */
+	.hero-section {
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	.hero-content h1 {
+		font-size: 2.8rem;
+	}
+
+	.hero-content .profession {
+		font-size: 1.2rem;
+	}
+
+	.hero-image {
+		margin-top: 2rem;
+	}
+
+	.cta-buttons {
+		justify-content: center;
+	}
+
+	/* Service cards */
+	.services-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* Grid layouts */
+	.grid-2,
+	.grid-3,
+	.grid-4 {
+		grid-template-columns: 1fr;
+	}
+
+	/* Portfolio grid */
+	.portfolio-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* Footer layout */
+	.footer-content {
+		flex-direction: column;
+	}
+
+	.footer-column {
+		width: 100%;
+	}
+
+	/* Form columns */
+	.form-row > .form-group {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	/* Section titles */
+	.section-title {
+		font-size: 2rem;
+	}
+
+	/* CTA section */
+	.services-cta {
+		padding: 1.5rem;
+	}
+}
+
+/* ==========================================================================
+   Extra Small Devices (portrait phones, less than 576px)
+   ========================================================================== */
+
+@media (max-width: 575px) {
+	/* Container adjustments */
+	.container {
+		width: 100%;
+		padding: 0 1.5rem;
+	}
+
+	/* Typography for mobile */
+	h1 {
+		font-size: 2.2rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	/* Hero section */
+	.hero-section {
+		text-align: center;
+		padding-top: 80px;
+	}
+
+	.hero-content h1 {
+		font-size: 2.2rem;
+	}
+
+	.hero-content .profession {
+		font-size: 1.1rem;
+	}
+
+	.cta-buttons {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.cta-buttons .btn {
+		width: 80%;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	/* Section spacing */
+	section {
+		padding: 3rem 0;
+	}
+
+	/* Section titles */
+	.section-title {
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.section-title::after {
+		width: 60px;
+	}
+
+	/* About section */
+	.about-content {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	/* Skills */
+	.skill-groups {
+		flex-direction: column;
+	}
+
+	/* Services */
+	.service-card {
+		padding: 1.5rem;
+	}
+
+	/* Portfolio */
+	.portfolio-filters {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.portfolio-filters .filter-btn {
+		width: 80%;
+		margin-bottom: 0.5rem;
+	}
+
+	/* Contact */
+	.contact-container {
+		flex-direction: column;
+	}
+
+	.contact-item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.contact-item .icon {
+		margin-bottom: 1rem;
+		margin-right: 0;
+	}
+
+	/* Footer */
+	footer {
+		padding: 2rem 0 1rem;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.footer-links h3::after {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.social-links {
+		justify-content: center;
+	}
+
+	.footer-contact-item {
+		justify-content: center;
+	}
+
+	/* Buttons */
+	.btn-lg {
+		padding: 0.8rem 1.8rem;
+	}
+
+	/* Form elements */
+	.form-group {
+		margin-bottom: 1rem;
+	}
+
+	/* Mobile navigation */
+	.mobile-menu-toggle {
+		display: block;
+	}
+
+	nav ul {
+		position: fixed;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		height: 0;
+		background-color: var(--card-bg);
+		overflow: hidden;
+		transition: height 0.3s ease;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	nav.active ul {
+		height: calc(100vh - 70px);
+		padding: 2rem 0;
+	}
+
+	nav ul li {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: opacity 0.3s ease, transform 0.3s ease;
+	}
+
+	nav.active ul li {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	/* Custom animations for mobile */
+	nav.active ul li:nth-child(1) {
+		transition-delay: 0.1s;
+	}
+	nav.active ul li:nth-child(2) {
+		transition-delay: 0.2s;
+	}
+	nav.active ul li:nth-child(3) {
+		transition-delay: 0.3s;
+	}
+	nav.active ul li:nth-child(4) {
+		transition-delay: 0.4s;
+	}
+	nav.active ul li:nth-child(5) {
+		transition-delay: 0.5s;
+	}
+}
+
+/* ==========================================================================
+   Print Styles (Optimize for printing)
+   ========================================================================== */
+
+@media print {
+	/* Hide unnecessary elements */
+	header,
+	nav,
+	footer,
+	.dark-mode-toggle,
+	.social-links,
+	.cta-buttons {
+		display: none !important;
+	}
+
+	/* Ensure text is black on white */
+	body {
+		color: #000 !important;
+		background: #fff !important;
+	}
+
+	/* Break URLs after punctuation */
+	a[href]:after {
+		content: " (" attr(href) ")";
+		font-size: 90%;
+	}
+
+	/* Avoid page breaks inside important elements */
+	h1,
+	h2,
+	h3,
+	.about-content,
+	.skill-bar,
+	.service-card,
+	.portfolio-item,
+	.contact-item {
+		page-break-inside: avoid;
+	}
+
+	/* Force page breaks before sections */
+	section {
+		page-break-before: always;
+	}
+
+	/* Expand all content to full width */
+	.container,
+	.container-narrow,
+	.grid,
+	.services-container,
+	.portfolio-grid {
+		width: 100% !important;
+		max-width: 100% !important;
+		display: block !important;
+	}
+
+	/* Remove shadows, animations, and effects */
+	.card,
+	.service-card,
+	.portfolio-item,
+	.contact-item,
+	.container-elevated {
+		box-shadow: none !important;
+		border: 1px solid #ddd !important;
+	}
+}

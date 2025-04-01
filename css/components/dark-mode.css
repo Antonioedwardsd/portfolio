@@ -1,0 +1,171 @@
+/* Dark Mode Component Styles
+-------------------------------------------------- */
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1000;
+	box-shadow: var(--shadow);
+	transition: all 0.3s ease;
+	border: none;
+	outline: none;
+}
+
+.dark-mode-toggle:hover {
+	transform: scale(1.1);
+	background-color: var(--primary-dark);
+}
+
+.dark-mode-toggle:active {
+	transform: scale(0.95);
+}
+
+.dark-mode-toggle i {
+	font-size: 1.5rem;
+	transition: transform 0.5s ease;
+}
+
+/* Rotate icon on click for visual feedback */
+.dark-mode-toggle:active i {
+	transform: rotate(360deg);
+}
+
+/* Dark mode icon adjustments */
+body.dark-mode .dark-mode-toggle {
+	background-color: var(--accent-color);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+	background-color: var(--accent-dark);
+}
+
+/* Global transitions for theme switching */
+body,
+section,
+header,
+footer,
+.card,
+.service-card,
+.portfolio-item,
+.contact-item,
+.contact-form,
+input,
+textarea,
+button,
+.hero-section,
+.about-section,
+.portfolio-section,
+.contact-section {
+	transition: background-color 0.3s ease, color 0.3s ease,
+		border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark mode specific overrides */
+body.dark-mode .filter-btn {
+	color: white;
+	background-color: var(--dark-bg);
+}
+
+body.dark-mode .filter-btn:hover,
+body.dark-mode .filter-btn.active {
+	background-color: var(--primary-color);
+}
+
+body.dark-mode .social-links a {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .social-links a:hover {
+	background-color: var(--primary-color);
+}
+
+/* Dark mode indicator (optional) */
+.dark-mode-indicator {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: var(--dark-bg);
+	color: white;
+	padding: 5px 10px;
+	border-radius: var(--border-radius-sm);
+	font-size: var(--font-size-sm);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	z-index: 1001;
+}
+
+body.dark-mode .dark-mode-indicator {
+	opacity: 0;
+}
+
+/* Show indicator briefly when mode changes */
+body.dark-mode-transition .dark-mode-indicator {
+	opacity: 1;
+}
+
+/* Dark Mode Toggle Animations */
+@keyframes darkModeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes darkModeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Optional: Add subtle animation when changing modes */
+body.dark-mode {
+	animation: darkModeIn 0.3s ease forwards;
+}
+
+body.light-mode-transition {
+	animation: darkModeOut 0.3s ease forwards;
+}
+
+/* Responsive adjustments for dark mode toggle */
+@media (max-width: 768px) {
+	.dark-mode-toggle {
+		bottom: 15px;
+		right: 15px;
+		width: 45px;
+		height: 45px;
+	}
+
+	.dark-mode-toggle i {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.dark-mode-toggle {
+		bottom: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.dark-mode-toggle i {
+		font-size: 1.2rem;
+	}
+}

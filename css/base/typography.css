@@ -1,0 +1,170 @@
+/* Typography Styles */
+
+/* Base Typography */
+body {
+	font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: var(--text-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* Section Titles */
+.section-title {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	position: relative;
+	padding-bottom: 1rem;
+	font-weight: 700;
+}
+
+.section-title::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 4px;
+	background-color: var(--primary-color);
+}
+
+/* Text Styles */
+p {
+	margin-bottom: 1rem;
+}
+
+.highlight {
+	color: var(--primary-color);
+}
+
+/* Logo Typography */
+.logo h1 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--primary-color);
+}
+
+/* Navigation Typography */
+nav ul li a {
+	font-weight: 500;
+}
+
+/* Hero Section Typography */
+.hero-content h2 {
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+	line-height: 1.2;
+}
+
+.profession {
+	font-size: 1.5rem;
+	color: var(--gray-color);
+	margin-bottom: 1.5rem;
+}
+
+.intro-text {
+	font-size: 1.1rem;
+	max-width: 600px;
+	margin-bottom: 2rem;
+}
+
+/* About Section Typography */
+.about-text p {
+	margin-bottom: 2rem;
+	font-size: 1.05rem;
+}
+
+.skills h3 {
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+}
+
+/* Service Card Typography */
+.service-card h3 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+/* Portfolio Item Typography */
+.portfolio-overlay h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Button Typography */
+.btn {
+	font-weight: 500;
+}
+
+/* Footer Typography */
+.footer-logo h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.copyright {
+	font-size: 0.9rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+	.hero-content h2 {
+		font-size: 2.5rem;
+	}
+
+	.section-title {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-content h2 {
+		font-size: 2rem;
+	}
+
+	.profession {
+		font-size: 1.2rem;
+	}
+
+	.section-title {
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+	}
+}

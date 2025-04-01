@@ -1,0 +1,196 @@
+/* Contact Section Styles
+-------------------------------------------------- */
+
+/* Contact Section Base */
+.contact-section {
+	background-color: var(--light-bg);
+	position: relative;
+	overflow: hidden;
+}
+
+/* Background patterns */
+.contact-pattern {
+	position: absolute;
+	opacity: 0.05;
+	z-index: 0;
+}
+
+.contact-pattern-top {
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 300px;
+	background-image: radial-gradient(var(--primary-color) 2px, transparent 2px);
+	background-size: 30px 30px;
+}
+
+.contact-pattern-bottom {
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background-image: linear-gradient(
+			45deg,
+			var(--primary-color) 25%,
+			transparent 25%
+		),
+		linear-gradient(-45deg, var(--primary-color) 25%, transparent 25%);
+	background-size: 20px 20px;
+}
+
+/* Contact Container */
+.contact-container {
+	display: flex;
+	gap: var(--spacing-xxl);
+	position: relative;
+	z-index: 1;
+}
+
+/* Contact Info Column */
+.contact-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-lg);
+}
+
+/* Contact Card Items */
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-md);
+	padding: var(--spacing-lg);
+	background-color: var(--card-bg);
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow);
+	transition: var(--transition-base);
+}
+
+.contact-item:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-lg);
+}
+
+.contact-item .icon {
+	width: 50px;
+	height: 50px;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 1.2rem;
+	flex-shrink: 0;
+}
+
+.contact-details {
+	flex-grow: 1;
+}
+
+.contact-details h3 {
+	margin-bottom: var(--spacing-xs);
+	font-size: var(--font-size-lg);
+}
+
+.contact-details p {
+	color: var(--gray-color);
+	line-height: 1.5;
+}
+
+.contact-details a {
+	color: var(--text-color);
+	transition: var(--transition-base);
+}
+
+.contact-details a:hover {
+	color: var(--primary-color);
+}
+
+/* Contact Form Column - styling in forms.css component */
+.contact-form {
+	flex: 1;
+}
+
+/* Form Status Messages */
+.form-status {
+	padding: var(--spacing-md);
+	border-radius: var(--border-radius);
+	margin-bottom: var(--spacing-md);
+	display: none;
+}
+
+.form-status.success {
+	background-color: rgba(40, 167, 69, 0.1);
+	border: 1px solid var(--success-color);
+	color: var(--success-color);
+	display: block;
+}
+
+.form-status.error {
+	background-color: rgba(220, 53, 69, 0.1);
+	border: 1px solid var(--danger-color);
+	color: var(--danger-color);
+	display: block;
+}
+
+/* Social Links */
+/* .contact-social {
+	margin-top: var(--spacing-lg);
+}
+
+.contact-social h3 {
+	margin-bottom: var(--spacing-md);
+}
+
+.contact-social-links {
+	display: flex;
+	gap: var(--spacing-sm);
+}
+
+.contact-social-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: var(--card-bg);
+	border-radius: 50%;
+	transition: var(--transition-base);
+	color: var(--primary-color);
+	box-shadow: var(--shadow-sm);
+}
+
+.contact-social-links a:hover {
+	background-color: var(--primary-color);
+	color: white;
+	transform: translateY(-3px);
+} */
+
+/* Responsive adjustments specific to contact section */
+@media (max-width: 768px) {
+	.contact-container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 576px) {
+	.contact-item {
+		flex-direction: column;
+		text-align: center;
+		padding: var(--spacing-md);
+	}
+
+	.contact-item .icon {
+		margin-bottom: var(--spacing-sm);
+	}
+}
+
+/* Dark mode adjustments */
+body.dark-mode .contact-social-links a {
+	background-color: var(--dark-bg);
+}
+
+body.dark-mode .contact-item {
+	background-color: var(--card-bg);
+}

@@ -1,0 +1,56 @@
+/* Social Links Component
+-------------------------------------------------- */
+
+/* Base social links container */
+.social-links {
+	display: flex;
+	gap: var(--spacing-md);
+	padding-top: var(--spacing-md);
+}
+
+/* Individual social link styling */
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
+.social-link i {
+	transition: transform 0.3s ease;
+}
+
+.social-link:hover i {
+	transform: scale(1.2);
+}
+
+/* Light theme (for contact section) */
+.social-link-light {
+	background-color: var(--card-bg);
+	color: var(--primary-color);
+	box-shadow: var(--shadow-sm);
+}
+
+.social-link-light:hover {
+	background-color: var(--primary-color);
+	color: white;
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-md);
+}
+
+/* Dark theme (for footer) */
+.social-link-dark {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.social-link-dark:hover {
+	background-color: var(--primary-color);
+	color: white;
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
