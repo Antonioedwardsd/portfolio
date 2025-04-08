@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	setupTypingEffect();
+	animateSections();
+	initPortfolioParallax();
 });
 
 // Header scroll animation
@@ -121,6 +123,28 @@ function headerScrollAnimation() {
 }
 
 headerScrollAnimation();
+
+// Animate sections when they enter viewport
+function animateSections() {
+	const sections = document.querySelectorAll("section");
+
+	const sectionObserver = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("section-visible");
+					sectionObserver.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.2 }
+	);
+
+	sections.forEach((section) => {
+		section.classList.add("section-animate");
+		sectionObserver.observe(section);
+	});
+}
 
 // Typing animation
 function setupTypingEffect() {
@@ -225,6 +249,55 @@ function applyTranslations(lang) {
 function updateLanguageToggleText(lang) {
 	const languageToggle = document.getElementById("language-toggle");
 	if (languageToggle) {
-		languageToggle.textContent = lang === "en" ? "ES" : "EN";
+		// Actualiza el código del idioma
+		const langCode = languageToggle.querySelector(".language-code");
+		if (langCode) {
+			langCode.textContent = lang === "en" ? "ES" : "EN";
+		}
+
+		// Actualiza la bandera
+		const flagIcon = document.getElementById("language-flag");
+		if (flagIcon) {
+			flagIcon.src =
+				lang === "en"
+					? "assets/icons/spain-flag.ico"
+					: "assets/icons/uk-flag.ico";
+			flagIcon.alt = lang === "en" ? "Español" : "English";
+		}
 	}
+}
+
+// Efecto de paralaje para la sección de portfolio
+function initPortfolioParallax() {
+	const portfolioSection = document.querySelector(".portfolio-section");
+
+	if (!portfolioSection) return;
+
+	// Añadir elementos de fondo para el efecto
+	const bgElements = `
+        <div class="portfolio-bg-element circle-1"></div>
+        <div class="portfolio-bg-element circle-2"></div>
+        <div class="portfolio-bg-element circle-3"></div>
+        <div class="portfolio-bg-element square"></div>
+    `;
+
+	portfolioSection.insertAdjacentHTML("afterbegin", bgElements);
+
+	// Mover elementos de fondo al hacer scroll
+	window.addEventListener("scroll", () => {
+		const elements = portfolioSection.querySelectorAll(".portfolio-bg-element");
+		const scrollPosition = window.scrollY;
+		const sectionTop = portfolioSection.offsetTop;
+		const scrollRelative = scrollPosition - sectionTop;
+
+		if (
+			scrollPosition >= sectionTop - window.innerHeight &&
+			scrollPosition <= sectionTop + portfolioSection.offsetHeight
+		) {
+			elements.forEach((el, index) => {
+				const speed = (index + 1) * 0.05;
+				el.style.transform = `translateY(${scrollRelative * speed}px)`;
+			});
+		}
+	});
 }

@@ -90,6 +90,12 @@ export const translations = {
 		"portfolio.airbnb.description":
 			"Project designed and implemented during Le Wagon bootcamp",
 		"portfolio.viewDetails": "View Details",
+		"portfolio.foot-finance.title": "FootFinance",
+		"portfolio.foot-finance.description":
+			"FootFinance is a full-stack web application that allows users to visualize and analyze the stock market performance of football clubs listed on financial markets.",
+		"portfolio.calorie-tracker.title": "Calorie Tracker",
+		"portfolio.calorie-tracker.description":
+			"This application helps users track their daily calorie intake and expenditure. The app is built with vanilla JavaScript using classes for organization and localStorage for data persistence.",
 
 		// Contact section
 		"contact.title": "Contact",
@@ -195,9 +201,10 @@ export const translations = {
 		"portfolio.filter.app": "Aplicaciones",
 		"portfolio.foot-finance.title": "FootFinance",
 		"portfolio.foot-finance.description":
-			"FootFinance es una aplicación web fullstack que permite visualizar y analizar el rendimiento bursátil de clubes de fútbol que cotizan en el mercado financiero. ",
-		"portfolio.foot-finance.detail":
-			"Lideré un equipo de 3 desarrolladores para crear esta aplicación web en 2 semanas",
+			"FootFinance es una aplicación web fullstack que permite visualizar y analizar el rendimiento bursátil de clubes de fútbol que cotizan en el mercado financiero.",
+		"portfolio.calorie-tracker.title": "Contador de Calorías",
+		"portfolio.calorie-tracker.description":
+			"Esta aplicación ayuda a los usuarios a realizar un seguimiento de su ingesta y gasto calórico diario. La aplicación está construida con JavaScript vanilla utilizando clases para la organización y localStorage para la persistencia de datos.",
 		"portfolio.airbnb.title": "Clon de Airbnb",
 		"portfolio.airbnb.description":
 			"Proyecto diseñado e implementado durante el bootcamp de Le Wagon",

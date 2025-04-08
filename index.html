@@ -198,7 +198,7 @@
 									Desafío Latam (Scholarship)
 								</p>
 								<p class="timeline-date" data-i18n="education.backend.date">
-									October 2024 - March 2025 (In progress)
+									October 2024 - April 2025 (In progress)
 								</p>
 								<ul>
 									<li data-i18n="education.backend.detail1">
@@ -363,6 +363,35 @@
 						</button>
 					</div>
 					<div class="portfolio-grid">
+						<!-- FootFinance - Proyecto destacado -->
+						<div class="portfolio-item featured" data-category="web">
+							<img src="assets/images/foot-finance.jpg" alt="FootFinance" />
+							<div class="portfolio-overlay">
+								<span class="portfolio-category">Featured Project</span>
+								<h3 data-i18n="portfolio.foot-finance.title">FootFinance</h3>
+								<p data-i18n="portfolio.foot-finance.description">
+									FootFinance is a full-stack web application that allows users
+									to visualize and analyze the stock market performance of
+									football clubs listed on financial markets.
+								</p>
+								<div class="portfolio-skills">
+									<span class="skill-tag">React</span>
+									<span class="skill-tag">Node.js</span>
+									<span class="skill-tag">Express</span>
+									<span class="skill-tag">MongoDB</span>
+									<span class="skill-tag">Recharts</span>
+									<span class="skill-tag">Yahoo Finance API</span>
+								</div>
+								<a
+									href="https://github.com/Antonioedwardsd/footfinance"
+									class="btn"
+									data-i18n="portfolio.viewDetails"
+									>View Details</a
+								>
+							</div>
+						</div>
+
+						<!-- Calorie Tracker -->
 						<div class="portfolio-item" data-category="web">
 							<img
 								src="assets/images/calories-tracker.jpg"
@@ -378,6 +407,14 @@
 									using classes for organization and localStorage for data
 									persistence.
 								</p>
+								<!-- Añadir portfolio-skills -->
+								<div class="portfolio-skills">
+									<span class="skill-tag">HTML</span>
+									<span class="skill-tag">CSS</span>
+									<span class="skill-tag">JavaScript</span>
+									<span class="skill-tag">localStorage</span>
+									<span class="skill-tag">Responsive Design</span>
+								</div>
 								<a
 									href="https://github.com/Antonioedwardsd/calorie-tracker"
 									class="btn"
@@ -386,20 +423,8 @@
 								>
 							</div>
 						</div>
-						<div class="portfolio-item" data-category="web">
-							<img src="assets/images/foot-finance.jpg" alt="FootFinance" />
-							<div class="portfolio-overlay">
-								<h3 data-i18n="portfolio.foot-finance.title">FootFinance</h3>
-								<p data-i18n="portfolio.foot-finance.description">
-									FootFinance is a full-stack web application that allows users
-									to visualize and analyze the stock market performance of
-									football clubs listed on financial markets.
-								</p>
-								<a href="#" class="btn" data-i18n="portfolio.viewDetails"
-									>View Details</a
-								>
-							</div>
-						</div>
+
+						<!-- Airbnb Clone -->
 						<div class="portfolio-item" data-category="web">
 							<img src="assets/images/airbnb-clone.jpg" alt="Airbnb Clone" />
 							<div class="portfolio-overlay">
@@ -407,6 +432,15 @@
 								<p data-i18n="portfolio.airbnb.description">
 									Project designed and implemented during Le Wagon bootcamp
 								</p>
+								<!-- Añadir portfolio-skills -->
+								<div class="portfolio-skills">
+									<span class="skill-tag">Ruby</span>
+									<span class="skill-tag">Rails</span>
+									<span class="skill-tag">PostgreSQL</span>
+									<span class="skill-tag">Bootstrap</span>
+									<span class="skill-tag">JavaScript</span>
+									<span class="skill-tag">Heroku</span>
+								</div>
 								<a href="#" class="btn" data-i18n="portfolio.viewDetails"
 									>View Details</a
 								>
@@ -609,7 +643,19 @@
 			<i class="fas fa-moon"></i>
 		</button>
 
-		<button id="language-toggle" class="language-toggle">ES</button>
+		<button
+			id="language-toggle"
+			class="language-toggle"
+			aria-label="Change language"
+		>
+			<img
+				src="assets/icons/spain-flag.ico"
+				alt="Spanish"
+				class="flag-icon"
+				id="language-flag"
+			/>
+			<span class="language-code">ES</span>
+		</button>
 
 		<script src="script.js" type="module"></script>
 	</body>
