@@ -198,3 +198,35 @@ body.dark-mode .btn-loading::after {
 	border-color: var(--light-bg);
 	border-top-color: transparent;
 }
+
+/* Añadir al final del archivo */
+
+/* Botones específicos de portfolio */
+.portfolio-overlay .btn {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: var(--border-radius-sm);
+	margin-top: var(--spacing-md);
+	font-weight: var(--font-weight-medium);
+	letter-spacing: 0.5px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: transform 0.4s ease, opacity 0.4s ease;
+	transition-delay: calc(var(--index, 0) * 0.1s);
+	--index: 4;
+}
+
+.portfolio-overlay .btn:after {
+	content: "→";
+	font-size: 1.1em;
+	transition: transform 0.3s ease;
+}
+
+.portfolio-overlay .btn:hover:after {
+	transform: translateX(4px);
+}

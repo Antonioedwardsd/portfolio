@@ -81,14 +81,11 @@ export const translations = {
 		"portfolio.filter.all": "All",
 		"portfolio.filter.web": "Web Development",
 		"portfolio.filter.app": "Applications",
+		"portfolio.subscriptify.detail":
+			"​A web application designed to track and send notifications about subscription renewals. It offers user authentication through Devise, ensuring secure and adaptable authentication mechanisms",
 		"portfolio.subscriptify.title": "Subscriptify",
 		"portfolio.subscriptify.description":
-			"Web application for subscription management",
-		"portfolio.subscriptify.detail":
-			"Led a team of 3 developers in creating this web application in 2 weeks",
-		"portfolio.airbnb.title": "Airbnb Clone",
-		"portfolio.airbnb.description":
-			"Project designed and implemented during Le Wagon bootcamp",
+			"​A web application designed to track and send notifications about subscription renewals. It offers user authentication through Devise, ensuring secure and adaptable authentication mechanisms.",
 		"portfolio.viewDetails": "View Details",
 		"portfolio.foot-finance.title": "FootFinance",
 		"portfolio.foot-finance.description":
@@ -205,9 +202,9 @@ export const translations = {
 		"portfolio.calorie-tracker.title": "Contador de Calorías",
 		"portfolio.calorie-tracker.description":
 			"Esta aplicación ayuda a los usuarios a realizar un seguimiento de su ingesta y gasto calórico diario. La aplicación está construida con JavaScript vanilla utilizando clases para la organización y localStorage para la persistencia de datos.",
-		"portfolio.airbnb.title": "Clon de Airbnb",
-		"portfolio.airbnb.description":
-			"Proyecto diseñado e implementado durante el bootcamp de Le Wagon",
+		"portfolio.subscriptify.title": "Subcriptify",
+		"portfolio.subscriptify.description":
+			"Aplicación web diseñada para rastrear y enviar notificaciones sobre renovaciones de suscripciones. Ofrece autenticación de usuarios mediante Devise, asegurando mecanismos de autenticación seguros y adaptables.",
 		"portfolio.viewDetails": "Ver Detalles",
 
 		// Contact section

@@ -1,15 +1,16 @@
-.section-animate {
-	opacity: 0;
-	transform: translateY(30px);
-	transition: opacity 0.6s ease, transform 0.6s ease;
+/* Animaciones comunes */
+
+/* Fade In */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.section-visible {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-/* Animación para portfolio items */
+/* Fade In Up */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -21,11 +22,82 @@
 	}
 }
 
+/* Slide In */
+@keyframes slideIn {
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Float */
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Scroll */
+@keyframes scroll {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+}
+
+/* Spin */
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Spin con translate para loaders centrados */
+@keyframes spinCenter {
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+/* Animaciones de secciones */
+.section-animate {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Timeline animations */
+.timeline-item {
+	opacity: 0;
+	transform: translateX(-30px);
+}
+
+.timeline-item.animate-timeline {
+	animation: slideIn 0.5s forwards;
+}
+
+/* Portfolio item animations */
 .portfolio-item {
 	animation: fadeInUp 0.6s ease forwards;
 	opacity: 0;
 }
 
+/* Staggered delays for portfolio items */
 .portfolio-item:nth-child(1) {
 	animation-delay: 0.1s;
 }

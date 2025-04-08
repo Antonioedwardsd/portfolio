@@ -147,6 +147,11 @@
 	height: 100%;
 	object-fit: cover;
 	transition: transform 0.5s ease;
+	object-position: center;
+}
+
+.portfolio-item.wide-image img {
+	object-fit: contain;
 }
 
 /* Portfolio Overlay */
@@ -160,11 +165,12 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	opacity: 0;
 	transition: opacity 0.5s ease;
 	padding: var(--spacing-lg);
+	padding-top: calc(var(--spacing-lg) * 1.5);
 	text-align: center;
 	overflow-y: auto; /* Permitir scroll si el contenido es muy largo */
 	scrollbar-width: thin; /* Scrollbar fino para navegadores compatibles */
@@ -188,6 +194,17 @@
 	transition: transform 0.4s ease, opacity 0.4s ease;
 	transition-delay: calc(var(--index, 0) * 0.1s);
 	--index: 1;
+	position: relative;
+	top: 0;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.95) 70%,
+		rgba(0, 0, 0, 0.7)
+	);
+	padding: var(--spacing-sm) 0;
+	margin-top: 0;
+	z-index: 2;
+	width: 100%;
 }
 
 .portfolio-overlay p {
@@ -198,35 +215,7 @@
 	transition: transform 0.4s ease, opacity 0.4s ease;
 	transition-delay: calc(var(--index, 0) * 0.1s);
 	--index: 2;
-}
-
-.portfolio-overlay .btn {
-	opacity: 0;
-	transform: translateY(10px);
-	transition: transform 0.4s ease, opacity 0.4s ease;
-	transition-delay: calc(var(--index, 0) * 0.1s);
-	--index: 4;
-	background-color: var(--primary-color);
-	color: white;
-	border: none;
-	padding: 8px 16px;
-	border-radius: var(--border-radius-sm);
 	margin-top: var(--spacing-md);
-	font-weight: var(--font-weight-medium);
-	letter-spacing: 0.5px;
-	display: inline-flex;
-	align-items: center;
-	gap: 8px;
-}
-
-.portfolio-overlay .btn:after {
-	content: "→";
-	font-size: 1.1em;
-	transition: transform 0.3s ease;
-}
-
-.portfolio-overlay .btn:hover:after {
-	transform: translateX(4px);
 }
 
 /* Portfolio Hover Effects */
@@ -450,6 +439,8 @@
 	.portfolio-overlay p {
 		font-size: 0.875rem;
 		margin-bottom: 10px;
+		max-height: 120px;
+		overflow-y: auto;
 	}
 
 	.portfolio-overlay .skill-tag {
@@ -497,4 +488,17 @@ body.dark-mode .portfolio-modal-content {
 
 body.dark-mode .portfolio-empty {
 	background-color: var(--dark-bg);
+}
+
+/* Añadir al final del archivo para forzar el efecto hover */
+.portfolio-section .portfolio-item:hover .portfolio-overlay {
+	opacity: 1 !important;
+}
+
+.portfolio-section .portfolio-item:hover .portfolio-overlay h3,
+.portfolio-section .portfolio-item:hover .portfolio-overlay p,
+.portfolio-section .portfolio-item:hover .portfolio-overlay .portfolio-skills,
+.portfolio-section .portfolio-item:hover .portfolio-overlay .btn {
+	transform: translateY(0) !important;
+	opacity: 1 !important;
 }
