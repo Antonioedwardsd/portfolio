@@ -198,7 +198,7 @@
 									Desafío Latam (Scholarship)
 								</p>
 								<p class="timeline-date" data-i18n="education.backend.date">
-									October 2024 - April 2025 (In progress)
+									October 2024 - April 2025
 								</p>
 								<ul>
 									<li data-i18n="education.backend.detail1">
@@ -364,11 +364,26 @@
 					</div>
 					<div class="portfolio-grid">
 						<!-- FootFinance - Proyecto destacado -->
-						<div class="portfolio-item featured" data-category="web">
-							<img src="assets/images/foot-finance.jpg" alt="FootFinance" />
+						<div
+							class="portfolio-item featured"
+							data-category="web"
+							aria-labelledby="project-footfinance"
+						>
+							<img
+								src="assets/images/foot-finance.jpg"
+								alt="FootFinance application screenshot showing stock performance visualization"
+								loading="eager"
+							/>
 							<div class="portfolio-overlay">
-								<span class="portfolio-category">Featured Project</span>
-								<h3 data-i18n="portfolio.foot-finance.title">FootFinance</h3>
+								<span class="portfolio-category" aria-hidden="true"
+									>Featured Project</span
+								>
+								<h3
+									id="project-footfinance"
+									data-i18n="portfolio.foot-finance.title"
+								>
+									FootFinance
+								</h3>
 								<p data-i18n="portfolio.foot-finance.description">
 									FootFinance is a full-stack web application that allows users
 									to visualize and analyze the stock market performance of
@@ -396,6 +411,7 @@
 							<img
 								src="assets/images/calories-tracker.jpg"
 								alt="Calorie Tracker"
+								loading="lazy"
 							/>
 							<div class="portfolio-overlay">
 								<h3 data-i18n="portfolio.calorie-tracker.title">
@@ -426,7 +442,11 @@
 
 						<!-- Airbnb Clone -->
 						<div class="portfolio-item" data-category="web">
-							<img src="assets/images/airbnb-clone.jpg" alt="Airbnb Clone" />
+							<img
+								src="assets/images/airbnb-clone.jpg"
+								alt="Airbnb Clone"
+								loading="lazy"
+							/>
 							<div class="portfolio-overlay">
 								<h3 data-i18n="portfolio.airbnb.title">Airbnb Clone</h3>
 								<p data-i18n="portfolio.airbnb.description">
@@ -450,16 +470,16 @@
 				</div>
 			</section>
 
-			<!-- Contact section -->
+			<!-- Contact section
 			<section id="contact" class="contact-section">
 				<div class="contact-pattern contact-pattern-top"></div>
 				<div class="contact-pattern contact-pattern-bottom"></div>
 
 				<div class="container">
 					<h2 class="section-title" data-i18n="contact.title">Contact</h2>
-					<div class="contact-container">
+					<div class="contact-container"> -->
 						<!-- Columna 1: Información de contacto -->
-						<div class="contact-info">
+						<!-- <div class="contact-info">
 							<div class="contact-item">
 								<div class="icon"><i class="fas fa-envelope"></i></div>
 								<div class="contact-details">
@@ -470,14 +490,14 @@
 										>
 									</p>
 								</div>
-							</div>
-
+							</div> -->
+<!-- 
 							<div class="contact-item">
 								<div class="icon"><i class="fas fa-phone"></i></div>
 								<div class="contact-details">
 									<h3 data-i18n="contact.phone">Phone</h3>
 									<p>
-										<a href="tel:+56976236486">+56 9 76236486</a>
+										<a href="tel:+XXXXXXXXXX">+XXXXXXXXXXX</a>
 									</p>
 								</div>
 							</div>
@@ -488,50 +508,13 @@
 									<h3 data-i18n="contact.location">Location</h3>
 									<p>Santiago, Chile</p>
 								</div>
-							</div>
+							</div> -->
 
 							<!-- Aquí puedes añadir los iconos de redes sociales si lo deseas -->
-							<div class="contact-social">
-								<h3 data-i18n="contact.findMe">Or Find Me On</h3>
-								<div class="social-links">
-									<a
-										href="https://github.com/antonioedwardsd"
-										class="social-link social-link-light"
-										target="_blank"
-										aria-label="GitHub"
-									>
-										<i class="fab fa-github fa-lg"></i>
-									</a>
-									<a
-										href="https://www.linkedin.com/in/antonioedwardsd"
-										class="social-link social-link-light"
-										target="_blank"
-										aria-label="LinkedIn"
-									>
-										<i class="fab fa-linkedin-in fa-lg"></i>
-									</a>
-									<a
-										href="https://twitter.com/tuusuario"
-										class="social-link social-link-light"
-										target="_blank"
-										aria-label="Twitter"
-									>
-										<i class="fab fa-twitter fa-lg"></i>
-									</a>
-									<a
-										href="https://instagram.com/tuusuario"
-										class="social-link social-link-light"
-										target="_blank"
-										aria-label="Instagram"
-									>
-										<i class="fab fa-instagram fa-lg"></i>
-									</a>
-								</div>
-							</div>
-						</div>
+							
 
 						<!-- Columna 2: Formulario de contacto -->
-						<form class="contact-form">
+						<!-- <form class="contact-form">
 							<div class="form-status"></div>
 							<div class="form-group">
 								<label
@@ -570,7 +553,7 @@
 						</form>
 					</div>
 				</div>
-			</section>
+			</section> -->
 		</main>
 
 		<footer>
@@ -614,14 +597,53 @@
 						<i class="fas fa-envelope"></i>
 						<span>Antonio.edwardsdev@gmail.com</span>
 					</div>
-					<div class="footer-contact-item">
+					<!-- <div class="footer-contact-item">
 						<i class="fas fa-phone"></i>
-						<span>+56 9 76236486</span>
-					</div>
+						<span>+56 9 XXXXXXXXXX</span>
+					</div> -->
 					<div class="footer-contact-item">
 						<i class="fas fa-map-marker-alt"></i>
 						<span>Santiago, Chile</span>
 					</div>
+
+					<div class="contact-social">
+						<h3 data-i18n="contact.findMe">Or Find Me On</h3>
+						<div class="social-links">
+							<a
+								href="https://github.com/antonioedwardsd"
+								class="social-link social-link-light"
+								target="_blank"
+								aria-label="GitHub"
+							>
+								<i class="fab fa-github fa-lg"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/antonioedwardsd"
+								class="social-link social-link-light"
+								target="_blank"
+								aria-label="LinkedIn"
+							>
+								<i class="fab fa-linkedin-in fa-lg"></i>
+							</a>
+							<a
+								href="https://twitter.com"
+								class="social-link social-link-light"
+								target="_blank"
+								aria-label="Twitter"
+							>
+								<i class="fab fa-twitter fa-lg"></i>
+							</a>
+							<a
+								href="https://instagram.com"
+								class="social-link social-link-light"
+								target="_blank"
+								aria-label="Instagram"
+							>
+								<i class="fab fa-instagram fa-lg"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 
@@ -647,12 +669,15 @@
 			id="language-toggle"
 			class="language-toggle"
 			aria-label="Change language"
+			aria-expanded="false"
+			aria-controls="language-menu"
 		>
 			<img
 				src="assets/icons/spain-flag.ico"
 				alt="Spanish"
 				class="flag-icon"
 				id="language-flag"
+				aria-hidden="true"
 			/>
 			<span class="language-code">ES</span>
 		</button>

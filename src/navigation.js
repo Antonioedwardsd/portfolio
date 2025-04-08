@@ -103,20 +103,28 @@ export function applyTranslations(lang) {
 function updateLanguageToggleText(lang) {
 	const languageToggle = document.getElementById("language-toggle");
 	if (languageToggle) {
-		// Actualiza el código del idioma
+		// Update the button text
 		const langCode = languageToggle.querySelector(".language-code");
 		if (langCode) {
 			langCode.textContent = lang === "en" ? "ES" : "EN";
 		}
 
-		// Actualiza la bandera
+		// Update the flag icon
 		const flagIcon = document.getElementById("language-flag");
 		if (flagIcon) {
+			const nextLang = lang === "en" ? "es" : "en";
+			const nextLangFullName = lang === "en" ? "Español" : "English";
+
 			flagIcon.src =
 				lang === "en"
 					? "assets/icons/spain-flag.ico"
 					: "assets/icons/uk-flag.ico";
 			flagIcon.alt = lang === "en" ? "Español" : "English";
+
+			languageToggle.setAttribute(
+				"aria-label",
+				`Switch to ${nextLangFullName}`
+			);
 		}
 	}
 }

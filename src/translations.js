@@ -34,7 +34,7 @@ export const translations = {
 		"education.title": "Education",
 		"education.backend.title": "Back-End Application Development",
 		"education.backend.institution": "Desafío Latam (Scholarship)",
-		"education.backend.date": "October 2024 - March 2025 (In progress)",
+		"education.backend.date": "October 2024 - April 2025",
 		"education.backend.detail1":
 			"Intensive program specialized in TypeScript, Node.js, Express, and API development.",
 		"education.backend.detail2":
@@ -151,7 +151,7 @@ export const translations = {
 		"education.title": "Educación",
 		"education.backend.title": "Desarrollo de Aplicaciones Back-End",
 		"education.backend.institution": "Desafío Latam (Beca)",
-		"education.backend.date": "Octubre 2024 - Marzo 2025 (En curso)",
+		"education.backend.date": "Octubre 2024 - Abril 2025",
 		"education.backend.detail1":
 			"Programa intensivo especializado en TypeScript, Node.js, Express y desarrollo de API.",
 		"education.backend.detail2":
@@ -215,7 +215,7 @@ export const translations = {
 		"contact.email": "Correo",
 		"contact.phone": "Teléfono",
 		"contact.location": "Ubicación",
-		"contact.findMe": "Encuéntrame en",
+		"contact.findMe": "O Encuéntrame en",
 		"contact.form.name": "Nombre",
 		"contact.form.email": "Correo",
 		"contact.form.subject": "Asunto",
