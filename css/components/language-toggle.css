@@ -1,14 +1,13 @@
-/* Ajuste para lenguaje */
 .language-toggle {
 	position: fixed;
-	bottom: 80px; /* Posicionado debajo del botón de dark mode */
+	bottom: 80px;
 	right: 20px;
 	background-color: var(--primary-color);
 	color: white;
 	border: none;
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -27,8 +26,8 @@
 }
 
 .language-toggle .flag-icon {
-	width: 38px;
-	height: 38px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	object-fit: cover;
 }
@@ -49,7 +48,6 @@
 	font-weight: var(--font-weight-bold);
 }
 
-/* Dark mode adjustments */
 body.dark-mode .language-toggle {
 	background-color: var(--dark-accent);
 }

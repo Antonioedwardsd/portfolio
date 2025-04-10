@@ -1,11 +1,9 @@
-/* Base imports - IMPORTANTE: El orden importa */
 @import "base/variables.css";
 @import "base/reset.css";
-@import "base/animations.css"; /* Primero las animaciones base */
+@import "base/animations.css";
 @import "base/typography.css";
 
-/* Component imports */
-@import "components/buttons.css"; /* Primero componentes básicos */
+@import "components/buttons.css";
 @import "components/cards.css";
 @import "components/forms.css";
 @import "components/skills.css";
@@ -13,22 +11,18 @@
 @import "components/language-toggle.css";
 @import "components/dark-mode.css";
 
-/* Layout imports */
 @import "layout/grid.css";
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/timeline.css";
 
-/* Section imports - ÚLTIMO para que tengan mayor especificidad */
 @import "sections/hero.css";
 @import "sections/about.css";
-@import "sections/portfolio.css"; /* Asegura que tenga precedencia */
+@import "sections/portfolio.css";
 @import "sections/contact.css";
 
-/* Responsive - siempre al final */
 @import "responsive.css";
 
-/* Minimal Base Styles */
 body {
 	background-color: var(--bg-color);
 }
@@ -62,7 +56,6 @@ section {
 	padding: 0 var(--container-padding);
 }
 
-/* Global transition for theme switching */
 body,
 section,
 .service-card,

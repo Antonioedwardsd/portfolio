@@ -1,14 +1,9 @@
-/* Contact Section Styles
--------------------------------------------------- */
-
-/* Contact Section Base */
 .contact-section {
 	background-color: var(--light-bg);
 	position: relative;
 	overflow: hidden;
 }
 
-/* Background patterns */
 .contact-pattern {
 	position: absolute;
 	opacity: 0.05;
@@ -38,7 +33,6 @@
 	background-size: 20px 20px;
 }
 
-/* Contact Container */
 .contact-container {
 	display: flex;
 	gap: var(--spacing-xxl);
@@ -46,7 +40,6 @@
 	z-index: 1;
 }
 
-/* Contact Info Column */
 .contact-info {
 	flex: 1;
 	display: flex;
@@ -54,7 +47,6 @@
 	gap: var(--spacing-lg);
 }
 
-/* Contact Card Items */
 .contact-item {
 	display: flex;
 	align-items: center;
@@ -107,12 +99,10 @@
 	color: var(--primary-color);
 }
 
-/* Contact Form Column - styling in forms.css component */
 .contact-form {
 	flex: 1;
 }
 
-/* Form Status Messages */
 .form-status {
 	padding: var(--spacing-md);
 	border-radius: var(--border-radius);
@@ -134,40 +124,6 @@
 	display: block;
 }
 
-/* Social Links */
-/* .contact-social {
-	margin-top: var(--spacing-lg);
-}
-
-.contact-social h3 {
-	margin-bottom: var(--spacing-md);
-}
-
-.contact-social-links {
-	display: flex;
-	gap: var(--spacing-sm);
-}
-
-.contact-social-links a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40px;
-	height: 40px;
-	background-color: var(--card-bg);
-	border-radius: 50%;
-	transition: var(--transition-base);
-	color: var(--primary-color);
-	box-shadow: var(--shadow-sm);
-}
-
-.contact-social-links a:hover {
-	background-color: var(--primary-color);
-	color: white;
-	transform: translateY(-3px);
-} */
-
-/* Responsive adjustments specific to contact section */
 @media (max-width: 768px) {
 	.contact-container {
 		flex-direction: column;
@@ -186,7 +142,6 @@
 	}
 }
 
-/* Dark mode adjustments */
 body.dark-mode .contact-social-links a {
 	background-color: var(--dark-bg);
 }

@@ -1,7 +1,3 @@
-/* Buttons Component Styles
--------------------------------------------------- */
-
-/* Base button styles */
 .btn {
 	padding: 0.8rem 1.8rem;
 	border-radius: 4px;
@@ -13,7 +9,6 @@
 	text-align: center;
 }
 
-/* Focus and active states for accessibility and interaction */
 .btn:focus {
 	outline: 2px solid var(--accent-color);
 	outline-offset: 2px;
@@ -24,8 +19,6 @@
 	box-shadow: none;
 }
 
-/* Button variations */
-/* Primary button - solid background */
 .primary-btn {
 	background-color: var(--primary-color);
 	color: white;
@@ -37,7 +30,6 @@
 	box-shadow: 0 5px 15px rgba(74, 107, 221, 0.4);
 }
 
-/* Secondary button - outlined */
 .secondary-btn {
 	background-color: transparent;
 	border: 2px solid var(--primary-color);
@@ -50,7 +42,6 @@
 	transform: translateY(-3px);
 }
 
-/* Accent button - for call-to-actions */
 .accent-btn {
 	background-color: var(--accent-color);
 	color: var(--dark-bg);
@@ -62,7 +53,6 @@
 	box-shadow: 0 5px 15px rgba(244, 174, 63, 0.4);
 }
 
-/* Text button - for subtle actions */
 .text-btn {
 	background-color: transparent;
 	color: var(--primary-color);
@@ -74,31 +64,26 @@
 	transform: translateY(-2px);
 }
 
-/* Small button size */
 .btn-sm {
 	padding: 0.5rem 1.2rem;
 	font-size: 0.9rem;
 }
 
-/* Large button size */
 .btn-lg {
 	padding: 1rem 2.2rem;
 	font-size: 1.1rem;
 }
 
-/* Full width button */
 .btn-full {
 	width: 100%;
 }
 
-/* Button containers */
 .cta-buttons {
 	display: flex;
 	gap: 1rem;
 	flex-wrap: wrap;
 }
 
-/* Button with icon */
 .btn-icon {
 	display: inline-flex;
 	align-items: center;
@@ -110,7 +95,6 @@
 	font-size: 1.1em;
 }
 
-/* Disabled state */
 .btn[disabled],
 .btn.disabled {
 	opacity: 0.6;
@@ -118,7 +102,6 @@
 	pointer-events: none;
 }
 
-/* Dark mode adjustments */
 body.dark-mode .secondary-btn {
 	border-color: var(--primary-color);
 	color: var(--primary-color);
@@ -132,10 +115,9 @@ body.dark-mode .secondary-btn:hover {
 	background-color: var(--primary-color);
 	color: #fff;
 	font-weight: 600;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-/* Ajuste para dark mode */
 .dark-mode .language-toggle {
 	background-color: #444;
 	color: #fff;
@@ -145,7 +127,6 @@ body.dark-mode .secondary-btn:hover {
 	background-color: #555;
 }
 
-/* Button Groups - for adjacent buttons */
 .btn-group {
 	display: inline-flex;
 }
@@ -166,7 +147,6 @@ body.dark-mode .secondary-btn:hover {
 	margin-right: 0;
 }
 
-/* Loading State */
 .btn-loading {
 	position: relative;
 	color: transparent !important;
@@ -193,15 +173,11 @@ body.dark-mode .secondary-btn:hover {
 	}
 }
 
-/* Dark mode loading spinner adjustment */
 body.dark-mode .btn-loading::after {
 	border-color: var(--light-bg);
 	border-top-color: transparent;
 }
 
-/* Añadir al final del archivo */
-
-/* Botones específicos de portfolio */
 .portfolio-overlay .btn {
 	background-color: var(--primary-color);
 	color: white;

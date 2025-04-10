@@ -1,14 +1,9 @@
-/* About Section Styles
--------------------------------------------------- */
-
-/* About Section Base */
 .about-section {
 	background-color: var(--light-bg);
 	position: relative;
 	overflow: hidden;
 }
 
-/* Shape decorations */
 .about-section::before {
 	content: "";
 	position: absolute;
@@ -21,7 +16,6 @@
 	z-index: 0;
 }
 
-/* About Content Wrapper */
 .about-content {
 	display: flex;
 	gap: var(--spacing-xxl);
@@ -30,7 +24,6 @@
 	z-index: 1;
 }
 
-/* About Image */
 .about-content-full {
 	display: block;
 }
@@ -48,7 +41,7 @@
 	gap: 2rem;
 	margin-top: 1.5rem;
 }
-/* About Text */
+
 .about-text {
 	flex: 1;
 }
@@ -63,7 +56,6 @@
 	font-weight: var(--font-weight-bold);
 }
 
-/* About Stats */
 .about-stats {
 	display: flex;
 	flex-wrap: wrap;
@@ -92,7 +84,6 @@
 	letter-spacing: 1px;
 }
 
-/* Timeline */
 .timeline {
 	position: relative;
 	max-width: 800px;
@@ -166,7 +157,6 @@
 	z-index: 1;
 }
 
-/* About CTA */
 .about-cta {
 	margin-top: var(--spacing-xl);
 	text-align: center;
@@ -176,7 +166,6 @@
 	margin: 0 var(--spacing-xs);
 }
 
-/* Responsive */
 @media (max-width: 992px) {
 	.about-content {
 		gap: var(--spacing-xl);
@@ -229,7 +218,6 @@
 	}
 }
 
-/* Dark Mode */
 body.dark-mode .about-section::before {
 	background-color: rgba(115, 142, 236, 0.1);
 }

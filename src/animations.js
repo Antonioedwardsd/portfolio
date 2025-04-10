@@ -1,6 +1,3 @@
-/**
- * Initializes all animations for the website
- */
 export function initAnimations() {
 	setupTypingEffect();
 	animateSections();
@@ -9,7 +6,6 @@ export function initAnimations() {
 	initTimelineAnimation();
 }
 
-// Header scroll animation
 function headerScrollAnimation() {
 	const header = document.querySelector("header");
 	const scrollThreshold = 100;
@@ -23,7 +19,6 @@ function headerScrollAnimation() {
 	});
 }
 
-// Animate sections when they enter viewport
 function animateSections() {
 	const sections = document.querySelectorAll("section");
 
@@ -45,7 +40,6 @@ function animateSections() {
 	});
 }
 
-// Typing animation
 export function setupTypingEffect() {
 	window.clearAllTimeouts = function () {
 		if (window.animationTimeouts) {
@@ -61,20 +55,16 @@ export function setupTypingEffect() {
 
 	const originalName = nameElement.textContent;
 
-	// Remove any previous containers
 	document
 		.querySelectorAll(".typing-name-container")
 		.forEach((el) => el.remove());
 
-	// Create typing container
 	const typingContainer = document.createElement("span");
 	typingContainer.className = "typing-name-container highlight";
 	nameElement.parentNode.insertBefore(typingContainer, nameElement);
 
-	// Hide original element
 	nameElement.style.display = "none";
 
-	// Track timeouts to clear them later if needed
 	window.animationTimeouts = [];
 
 	function addTimeout(callback, delay) {
@@ -97,21 +87,17 @@ export function setupTypingEffect() {
 			typingContainer.textContent = originalName.substring(0, index - 1);
 			addTimeout(() => eraseCharacter(index - 1), 50);
 		} else {
-			// Keep container empty between animation cycles
 			typingContainer.textContent = "";
 
-			// Wait before starting next animation cycle
 			addTimeout(() => {
 				typeCharacter(0);
 			}, 1000);
 		}
 	}
 
-	// Start the animation
 	addTimeout(() => typeCharacter(0), 1000);
 }
 
-// Timeline animation
 function initTimelineAnimation() {
 	const timelineSection = document.querySelector(".education-section");
 	if (timelineSection) {
@@ -136,13 +122,11 @@ function animateTimeline() {
 	});
 }
 
-// Efecto de paralaje para la sección de portfolio
 function initPortfolioParallax() {
 	const portfolioSection = document.querySelector(".portfolio-section");
 
 	if (!portfolioSection) return;
 
-	// Añadir elementos de fondo para el efecto
 	const bgElements = `
         <div class="portfolio-bg-element circle-1"></div>
         <div class="portfolio-bg-element circle-2"></div>

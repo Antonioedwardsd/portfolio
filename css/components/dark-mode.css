@@ -1,7 +1,3 @@
-/* Dark Mode Component Styles
--------------------------------------------------- */
-
-/* Dark Mode Toggle Button */
 .dark-mode-toggle {
 	position: fixed;
 	bottom: 20px;
@@ -36,12 +32,10 @@
 	transition: transform 0.5s ease;
 }
 
-/* Rotate icon on click for visual feedback */
 .dark-mode-toggle:active i {
 	transform: rotate(360deg);
 }
 
-/* Dark mode icon adjustments */
 body.dark-mode .dark-mode-toggle {
 	background-color: var(--accent-color);
 }
@@ -50,7 +44,6 @@ body.dark-mode .dark-mode-toggle:hover {
 	background-color: var(--accent-dark);
 }
 
-/* Global transitions for theme switching */
 body,
 section,
 header,
@@ -71,7 +64,6 @@ button,
 		border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Dark mode specific overrides */
 body.dark-mode .filter-btn {
 	color: white;
 	background-color: var(--dark-bg);
@@ -90,7 +82,6 @@ body.dark-mode .social-links a:hover {
 	background-color: var(--primary-color);
 }
 
-/* Dark mode indicator (optional) */
 .dark-mode-indicator {
 	position: fixed;
 	top: 20px;
@@ -110,12 +101,10 @@ body.dark-mode .dark-mode-indicator {
 	opacity: 0;
 }
 
-/* Show indicator briefly when mode changes */
 body.dark-mode-transition .dark-mode-indicator {
 	opacity: 1;
 }
 
-/* Dark Mode Toggle Animations */
 @keyframes darkModeIn {
 	0% {
 		opacity: 0;
@@ -134,7 +123,6 @@ body.dark-mode-transition .dark-mode-indicator {
 	}
 }
 
-/* Optional: Add subtle animation when changing modes */
 body.dark-mode {
 	animation: darkModeIn 0.3s ease forwards;
 }
@@ -143,7 +131,6 @@ body.light-mode-transition {
 	animation: darkModeOut 0.3s ease forwards;
 }
 
-/* Responsive adjustments for dark mode toggle */
 @media (max-width: 768px) {
 	.dark-mode-toggle {
 		bottom: 15px;

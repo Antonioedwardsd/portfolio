@@ -1,7 +1,4 @@
-/* Forms Component Styles
--------------------------------------------------- */
-
-/* Form Container */
+/* Forms Component Styles */
 .form-container {
 	background-color: var(--card-bg);
 	border-radius: var(--border-radius);
@@ -9,7 +6,6 @@
 	padding: var(--spacing-lg);
 }
 
-/* Contact Form */
 .contact-form {
 	background-color: var(--bg-color);
 	padding: var(--spacing-xl);
@@ -20,13 +16,11 @@
 	gap: var(--spacing-lg);
 }
 
-/* Form Groups */
 .form-group {
 	position: relative;
 	margin-bottom: var(--spacing-md);
 }
 
-/* Labels */
 .form-label {
 	display: block;
 	margin-bottom: var(--spacing-xs);
@@ -34,14 +28,12 @@
 	color: var(--text-color);
 }
 
-/* Required indicator */
 .required-label::after {
 	content: "*";
 	color: var(--danger-color);
 	margin-left: 4px;
 }
 
-/* Input Fields */
 .form-control {
 	width: 100%;
 	padding: var(--spacing-md);
@@ -59,13 +51,11 @@
 	box-shadow: 0 0 0 3px rgba(74, 107, 221, 0.2);
 }
 
-/* Textarea */
 textarea.form-control {
 	min-height: 150px;
 	resize: vertical;
 }
 
-/* Select Element */
 select.form-control {
 	appearance: none;
 	background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
@@ -79,13 +69,11 @@ body.dark-mode select.form-control {
 	background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
 }
 
-/* Placeholder styling */
 ::placeholder {
 	color: var(--gray-color);
 	opacity: 0.7;
 }
 
-/* Form Feedback States */
 .form-text {
 	display: block;
 	margin-top: var(--spacing-xs);
@@ -127,7 +115,6 @@ body.dark-mode select.form-control {
 	color: var(--success-color);
 }
 
-/* Checkbox and Radio buttons */
 .form-check {
 	display: flex;
 	align-items: center;
@@ -145,7 +132,6 @@ body.dark-mode select.form-control {
 	user-select: none;
 }
 
-/* Form Horizontal Layout */
 .form-horizontal .form-group {
 	display: flex;
 	flex-wrap: wrap;
@@ -160,7 +146,6 @@ body.dark-mode select.form-control {
 	flex: 0 0 70%;
 }
 
-/* Input Groups */
 .input-group {
 	display: flex;
 	position: relative;
@@ -192,7 +177,6 @@ body.dark-mode select.form-control {
 	border-bottom-left-radius: 0;
 }
 
-/* Form Grid */
 .form-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -207,7 +191,6 @@ body.dark-mode select.form-control {
 	padding-left: var(--spacing-md);
 }
 
-/* Form Inline */
 .form-inline {
 	display: flex;
 	flex-flow: row wrap;
@@ -219,7 +202,6 @@ body.dark-mode select.form-control {
 	margin-right: var(--spacing-md);
 }
 
-/* Dark Mode Adjustments */
 body.dark-mode .form-control {
 	background-color: var(--form-bg);
 	border-color: var(--border-color);
@@ -235,7 +217,6 @@ body.dark-mode .input-group-text {
 	color: var(--gray-color);
 }
 
-/* Loading Indicator for Form Submission */
 .form-loading {
 	position: relative;
 }
@@ -279,7 +260,6 @@ body.dark-mode .form-loading::after {
 	}
 }
 
-/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
 	.form-horizontal .form-label,
 	.form-horizontal .form-control-wrapper {

@@ -1,14 +1,9 @@
-/* Social Links Component
--------------------------------------------------- */
-
-/* Base social links container */
 .social-links {
 	display: flex;
 	gap: var(--spacing-md);
 	padding-top: var(--spacing-md);
 }
 
-/* Individual social link styling */
 .social-link {
 	display: flex;
 	justify-content: center;
@@ -28,7 +23,6 @@
 	transform: scale(1.2);
 }
 
-/* Light theme (for contact section) */
 .social-link-light {
 	background-color: var(--card-bg);
 	color: var(--primary-color);
@@ -42,7 +36,6 @@
 	box-shadow: var(--shadow-md);
 }
 
-/* Dark theme (for footer) */
 .social-link-dark {
 	background-color: rgba(255, 255, 255, 0.1);
 	color: rgba(255, 255, 255, 0.8);

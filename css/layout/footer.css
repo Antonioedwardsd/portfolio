@@ -1,17 +1,12 @@
-/* Footer Layout Styles - Espaciado mejorado
--------------------------------------------------- */
-
-/* Main Footer */
 footer {
 	background-color: var(--dark-bg);
 	color: white;
 	padding: var(--spacing-xxl) 0 var(--spacing-md);
 }
 
-/* Footer Content Layout - Mejor espaciado entre columnas */
 .footer-content {
 	display: grid;
-	grid-template-columns: 1.5fr 1fr 1fr; /* Columna 1 más ancha */
+	grid-template-columns: 1.5fr 1fr 1fr;
 	gap: var(--spacing-xl);
 	width: 90%;
 	max-width: var(--max-width);
@@ -20,7 +15,6 @@ footer {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Footer Logo Section - Mejor espaciado vertical */
 .footer-logo {
 	margin-bottom: var(--spacing-md);
 }
@@ -35,35 +29,15 @@ footer {
 	margin-bottom: var(--spacing-lg);
 	font-size: var(--font-size-sm);
 	line-height: 1.6;
-	max-width: 350px; /* Más espacio para el texto */
+	max-width: 350px;
 }
 
-/* Footer Social - Espacio entre título y links */
-/* .footer-social h3 {
-	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: var(--spacing-md);
-	position: relative;
-	padding-bottom: var(--spacing-xs);
-}
-
-.footer-social h3::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 30px;
-	height: 2px;
-	background-color: var(--primary-color);
-} */
-
-/* Social Media Links - Mejor espaciado */
 .social-links {
 	display: flex;
-	gap: var(--spacing-md); /* Mayor espaciado entre íconos */
+	gap: var(--spacing-md);
 	color: var(--primary-color);
 }
 
-/* Quick Links Title styling */
 .footer-column h3 {
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: var(--spacing-md);
@@ -71,29 +45,26 @@ footer {
 	padding-bottom: var(--spacing-xs);
 }
 
-/* Footer Links - Espaciado consistente */
 .footer-links ul {
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacing-md); /* Más espacio entre enlaces */
+	gap: var(--spacing-md);
 }
 
-/* Contact Information - Alineación y espaciado mejorado */
 .footer-contact-item {
 	display: flex;
-	align-items: center; /* Mejor alineación vertical */
-	gap: var(--spacing-md); /* Más espacio entre icono y texto */
+	align-items: center;
+	gap: var(--spacing-md);
 	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: var(--spacing-md); /* Consistencia en el espaciado */
+	margin-bottom: var(--spacing-md);
 }
 
 .footer-contact-item i {
 	color: var(--primary-color);
-	width: 20px; /* Ancho fijo para alineación consistente */
+	width: 20px;
 	text-align: center;
 }
 
-/* Copyright Section - Mejor espaciado */
 .footer-bottom {
 	padding-top: var(--spacing-lg);
 	text-align: center;
@@ -102,13 +73,11 @@ footer {
 	margin: 0 auto;
 }
 
-/* Responsive Footer - Optimizado */
 @media (max-width: 992px) {
 	.footer-content {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	/* La primera columna ocupa todo el ancho */
 	.footer-about {
 		grid-column: 1 / -1;
 	}
@@ -126,18 +95,15 @@ footer {
 		gap: var(--spacing-lg);
 	}
 
-	/* Más espacio para la descripción en móviles */
 	.footer-description {
 		max-width: 100%;
 	}
 
-	/* Espaciado consistente en móviles */
 	.footer-links ul,
 	.footer-contact-item {
 		margin-bottom: var(--spacing-sm);
 	}
 
-	/* Mejor espaciado vertical entre secciones */
 	.footer-about,
 	.footer-links,
 	.footer-contact {
@@ -145,10 +111,6 @@ footer {
 	}
 }
 
-/* Mejoras de hover para el Footer
--------------------------------------------------- */
-
-/* Enlaces Quick Links - Efecto de deslizamiento */
 .footer-links a {
 	position: relative;
 	color: rgba(255, 255, 255, 0.7);
@@ -176,36 +138,6 @@ footer {
 	width: 100%;
 }
 
-/* Social Links - Efectos de hover mejorados */
-/* .social-links a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.1);
-	color: rgba(255, 255, 255, 0.8);
-	transition: all 0.3s ease;
-	overflow: hidden;
-}
-
-.social-links a:hover {
-	background-color: var(--primary-color);
-	color: white;
-	transform: translateY(-5px);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.social-links a i {
-	transition: transform 0.3s ease;
-}
-
-.social-links a:hover i {
-	transform: scale(1.2);
-} */
-
-/* Footer Contact Items - Hover effect */
 .footer-contact-item {
 	position: relative;
 	padding-left: 5px;
@@ -225,7 +157,6 @@ footer {
 	transform: scale(1.1);
 }
 
-/* Logo hover effect (opcional) */
 .footer-logo h3 {
 	position: relative;
 	display: inline-block;
@@ -236,12 +167,6 @@ footer {
 	color: var(--primary-color);
 }
 
-/* Dark mode specific hover effects */
 body.dark-mode .footer-links a:hover {
 	color: var(--primary-color);
 }
-
-/* body.dark-mode .social-links a:hover {
-	background-color: var(--primary-color);
-	color: var(--dark-bg);
-} */

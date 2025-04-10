@@ -1,14 +1,9 @@
-/* Portfolio Section Styles
--------------------------------------------------- */
-
-/* Portfolio Section Base */
 .portfolio-section {
 	background-color: var(--bg-color);
 	position: relative;
 	overflow: hidden;
 }
 
-/* Section Background Elements */
 .portfolio-bg-element {
 	position: absolute;
 	z-index: 0;
@@ -32,7 +27,6 @@
 	border-top-right-radius: 100%;
 }
 
-/* Elementos de fondo para efecto paralaje */
 .portfolio-bg-element.circle-1 {
 	position: absolute;
 	width: 200px;
@@ -77,7 +71,6 @@
 	z-index: 0;
 }
 
-/* Portfolio Filters */
 .portfolio-filters {
 	display: flex;
 	justify-content: center;
@@ -104,7 +97,6 @@
 	color: white;
 }
 
-/* Portfolio Grid */
 .portfolio-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -113,7 +105,6 @@
 	z-index: 1;
 }
 
-/* Portfolio Item */
 .portfolio-item {
 	position: relative;
 	border-radius: var(--border-radius);
@@ -121,23 +112,20 @@
 	box-shadow: var(--shadow);
 	aspect-ratio: 1/1;
 	transition: var(--transition-base);
-	transform: translateY(0); /* Asegurar que empiecen en posición neutral */
+	transform: translateY(0);
 }
 
-/* Featured item más grande */
 .portfolio-item.featured {
 	grid-column: span 2;
 	grid-row: span 2;
 	aspect-ratio: 16/9;
 }
 
-/* Mejorar hover effect */
 .portfolio-item:hover {
 	transform: translateY(-8px);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto de zoom más sutil */
 .portfolio-item:hover img {
 	transform: scale(1.05);
 }
@@ -154,7 +142,6 @@
 	object-fit: contain;
 }
 
-/* Portfolio Overlay */
 .portfolio-overlay {
 	position: absolute;
 	top: 0;
@@ -172,8 +159,8 @@
 	padding: var(--spacing-lg);
 	padding-top: calc(var(--spacing-lg) * 1.5);
 	text-align: center;
-	overflow-y: auto; /* Permitir scroll si el contenido es muy largo */
-	scrollbar-width: thin; /* Scrollbar fino para navegadores compatibles */
+	overflow-y: auto;
+	scrollbar-width: thin;
 	scrollbar-color: var(--primary-color) transparent;
 }
 
@@ -218,7 +205,6 @@
 	margin-top: var(--spacing-md);
 }
 
-/* Portfolio Hover Effects */
 .portfolio-item:hover .portfolio-overlay {
 	opacity: 1;
 }
@@ -231,7 +217,6 @@
 	opacity: 1;
 }
 
-/* Portfolio Item Categories */
 .portfolio-category {
 	position: absolute;
 	top: var(--spacing-md);
@@ -247,7 +232,6 @@
 	z-index: 2;
 }
 
-/* Portfolio Item Types (different styles) */
 .portfolio-item.wide {
 	grid-column: span 2;
 }
@@ -256,7 +240,6 @@
 	grid-row: span 2;
 }
 
-/* Empty State */
 .portfolio-empty {
 	text-align: center;
 	grid-column: 1 / -1;
@@ -265,13 +248,11 @@
 	border-radius: var(--border-radius);
 }
 
-/* Load More Button */
 .portfolio-load-more {
 	margin-top: var(--spacing-xxl);
 	text-align: center;
 }
 
-/* Masonry Layout Option */
 .portfolio-masonry {
 	columns: 3 300px;
 	column-gap: var(--spacing-lg);
@@ -285,7 +266,6 @@
 	display: block;
 }
 
-/* Portfolio Detail Modal */
 .portfolio-modal {
 	position: fixed;
 	top: 0;
@@ -336,7 +316,6 @@
 	z-index: 2;
 }
 
-/* Portfolio Single Page */
 .portfolio-single {
 	padding-top: var(--spacing-xxl);
 }
@@ -367,7 +346,6 @@
 	margin-bottom: var(--spacing-xl);
 }
 
-/* Portfolio Skills */
 .portfolio-skills {
 	display: flex;
 	flex-wrap: wrap;
@@ -402,7 +380,6 @@
 	--index: 3;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 992px) {
 	.portfolio-masonry {
 		columns: 2 250px;
@@ -473,11 +450,10 @@
 	}
 
 	.portfolio-item {
-		aspect-ratio: 3/2; /* Cambiado para mejor visualización en móviles */
+		aspect-ratio: 3/2;
 	}
 }
 
-/* Dark Mode Adjustments */
 body.dark-mode .portfolio-overlay {
 	background: rgba(0, 0, 0, 0.9);
 }
@@ -490,7 +466,6 @@ body.dark-mode .portfolio-empty {
 	background-color: var(--dark-bg);
 }
 
-/* Añadir al final del archivo para forzar el efecto hover */
 .portfolio-section .portfolio-item:hover .portfolio-overlay {
 	opacity: 1 !important;
 }
