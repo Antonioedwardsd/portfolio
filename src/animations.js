@@ -55,7 +55,7 @@ export function setupTypingEffect() {
 		.forEach((el) => el.remove());
 
 	const nameElement = document.querySelector(".intro-name .highlight");
-	if (!nameElement) return;
+	if (!nameElement || !nameElement.parentNode) return;
 
 	nameElement.style.display = "";
 
