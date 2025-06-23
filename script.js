@@ -6,5 +6,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Initialize all modules
 	initDarkMode();
 	initNavigation();
-	initAnimations();
+	// initAnimations();
 });

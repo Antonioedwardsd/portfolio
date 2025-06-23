@@ -11,6 +11,7 @@ export const translations = {
 
 		// Hero section
 		"hero.greeting": "Hello, I'm",
+		"hero.name": "Antonio Edwards D",
 		"hero.profession": "Full-Stack Developer",
 		"hero.intro":
 			"Developer with experience in logistics and operations, graduated from Le Wagon's intensive bootcamp, passionate about creating innovative and efficient web solutions.",
@@ -125,6 +126,7 @@ export const translations = {
 
 		// Hero section
 		"hero.greeting": "Hola, soy",
+		"hero.name": "Antonio Edwards D",
 		"hero.profession": "Desarrollador Full-Stack",
 		"hero.intro":
 			"Desarrollador con experiencia en logística y operaciones, graduado del bootcamp intensivo de Le Wagon, apasionado por crear soluciones web innovadoras y eficientes.",

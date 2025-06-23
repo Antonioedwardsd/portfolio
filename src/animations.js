@@ -50,14 +50,18 @@ export function setupTypingEffect() {
 
 	window.clearAllTimeouts();
 
-	const nameElement = document.querySelector(".intro-name .highlight");
-	if (!nameElement) return;
-
-	const originalName = nameElement.textContent;
-
 	document
 		.querySelectorAll(".typing-name-container")
 		.forEach((el) => el.remove());
+
+	const nameElement = document.querySelector(".intro-name .highlight");
+	if (!nameElement) return;
+
+	nameElement.style.display = "";
+
+	const originalName = nameElement.textContent.trim();
+
+	if (!originalName) return;
 
 	const typingContainer = document.createElement("span");
 	typingContainer.className = "typing-name-container highlight";

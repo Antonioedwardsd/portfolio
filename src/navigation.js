@@ -69,6 +69,7 @@ function initLanguageToggle() {
 		document.documentElement.setAttribute("lang", savedLanguage);
 		updateLanguageToggleText(savedLanguage);
 		applyTranslations(savedLanguage);
+		setupTypingEffect();
 
 		// Language change event
 		languageToggle.addEventListener("click", function () {
